@@ -1,0 +1,67 @@
+{% extends 'research/research_base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/side_nav.css' %}">
+    <title>Publications | Research</title>
+{% endblock %}
+
+{% block main_content %}
+    <div class="col">
+        <div class="row" style="margin: 25px;padding: 10px;">
+            <div class="col">
+                <h6>Select IIIT</h6>
+                <div class="dropright">
+                    <button class="btn dropdown-toggle border rounded-0 border-dark" data-toggle="dropdown"
+                            aria-expanded="false" type="button">Dropdown
+                    </button>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First
+                        Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a
+                            class="dropdown-item" role="presentation" href="#">Third Item</a><a class="dropdown-item"
+                                                                                                role="presentation"
+                                                                                                href="#">Menu Item</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive table-bordered" style="margin: 10px;padding: 7px;">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th class="table-active"><strong>Campus Name</strong><br></th>
+                    <th class="table-active"><strong>Title</strong><br></th>
+                    <th class="table-active"><strong>Description</strong><br></th>
+                    <th class="table-active"><strong>PDF</strong><br></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                </tr>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span
+                        aria-hidden="true">«</span></a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

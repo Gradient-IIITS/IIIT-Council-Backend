@@ -17,8 +17,11 @@
 * [Setup postgreSQL database](#setup-postgresql)
 * Run `python manage.py check` to check any errors
 * Run `python manage.py makemigrations` to make the migrations
-* un `python manage.py migrate` to update the database schema
+* Run `python manage.py migrate` to update the database schema  
 
+    > Note: You might need to add a dummy log file.  
+    > create a file `MAILGUN.py` in a `logs` folder.
+    
 
 ## Setup postgreSQL
 1. Install [postgreSQL](https://www.postgresql.org/download/) and configure it. (Set postgres password, **Note down the PORT**, etc).  

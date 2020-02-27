@@ -25,7 +25,7 @@ def send_mail(subject, body, to, sender=settings.EMAIL_HOST_USER, fail_silently=
             data={'from': sender,
                   'to': to,
                   'subject': subject,
-                  'text': body
+                  'html': body
                   })
     except:
         logger.error('Unable to Send Post Request')

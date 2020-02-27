@@ -1,0 +1,87 @@
+{% extends 'research/research_base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/side_nav.css' %}">
+    <title>Publications | Research</title>
+{% endblock %}
+
+{% block main_content %}
+    <div class="col">
+        <h2>Publications</h2>
+        <div class="row" style="margin: 25px;padding: 10px;">
+            <div class="col">
+                <h6>Select IIIT</h6>
+                <div class="dropright">
+                    <button class="btn dropdown-toggle border rounded-0 border-dark" data-toggle="dropdown"
+                            aria-expanded="false" type="button">Dropdown
+                    </button>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First
+                        Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a
+                            class="dropdown-item" role="presentation" href="#">Third Item</a><a class="dropdown-item"
+                                                                                                role="presentation"
+                                                                                                href="#">Menu Item</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h6>Academic Year</h6>
+                <div class="dropright">
+                    <button class="btn dropdown-toggle border rounded-0 border-dark" data-toggle="dropdown"
+                            aria-expanded="false" type="button">Dropdown
+                    </button>
+                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First
+                        Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a
+                            class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                </div>
+            </div>
+            <div class="col-xl-3">
+                <h6 class="text-muted">Data Updated on : XX-XX-XXXX</h6>
+            </div>
+        </div>
+        <h4 class="text-center">Academic Year : 20XX - 20XX</h4>
+        <div class="table-responsive table-bordered" style="margin: 10px;padding: 7px;">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th class="table-active" style="font-weight: normal;"><strong>Campus Name</strong><br></th>
+                    <th class="table-active" style="font-weight: normal;"><strong>Academic Year</strong><br></th>
+                    <th class="table-active" style="font-weight: normal;"><strong>Number of Peer Reviewed Papers
+                        Published in Journals</strong><br></th>
+                    <th class="table-active" style="font-weight: normal;"><strong>Number of Peer Reviewed Papers
+                        Published in Conferences Symposium, etc.</strong><br></th>
+                    <th class="table-active" style="font-weight: normal;"><strong>Number of Published Research
+                        Monographs,Books,Book Chapters etc.</strong><br></th>
+                    <th class="table-active" style="font-weight: normal;"><strong>URL with more details</strong><br>
+                    </th>
+                    <th class="table-active" style="font-weight: normal;"><strong>Annual Report References- page
+                        no.</strong><br></th>
+                    <th class="table-active" style="font-weight: normal;"><strong>Uploaded Date</strong><br></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Cell 1</td>
+                    <td>Cell 2</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                    <td>Cell 6</td>
+                    <td>Cell 7</td>
+                    <td>Cell 8</td>
+                </tr>
+                <tr>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 3</td>
+                    <td>Cell 4</td>
+                    <td>Cell 5</td>
+                    <td>Cell 6</td>
+                    <td>Cell 7</td>
+                    <td>Cell 8</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

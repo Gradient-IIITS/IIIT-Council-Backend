@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/base/styles.css' %}">
+    {% block head %}
+
+    {% endblock %}
+</head>
+
+<body>
+<header>
+    <div class="mainhead">
+        <div class="height d-flex justify-content-between align-items-center justify-content-sm-between align-items-sm-center justify-content-md-between align-items-md-center justify-content-lg-between align-items-lg-center d1">
+            <div class="time upper">
+                <p class="p1" id="navbar-timer">{% now "d M, Y  |  h:i A e" %}</p>
+            </div>
+            <div class="upper">
+                <p class="p1"><a><i class="fa fa-arrow-down"></i> &nbsp;<a class="anchor3" href="#footer_jump">Skip to
+                    Navigation</a></a></p>
+            </div>
+            <div class="remain-1">
+                <p class="p1"><a> <i class='fas fa-volume-up'></i> &nbsp; Screen Reader</a></p>
+            </div>
+            <div class="remain-2">
+                <p class="p2"><a href="#" class="anchor1">English</a>/<a href="#" class="anchor1">Hindi</a></p>
+            </div>
+            <div class="langauge upper">
+                <p class="p3"><a href="#" class="anchor1">A-</a> &nbsp;<a href="#" class="anchor1">A</a> &nbsp;<a
+                        href="#" style="color: rgb(255,255,255);">A+</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Logobar -->
+
+    <div class="row mx-0 justify-content-around align-items-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center"
+         style="width: 98%; align-content: center;">
+        <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 text-right align-self-center img1">
+            <a href="{% url 'home_page' %}"><img class="img-fluid icon" src="{% static 'img/base/logo.png' %}"
+                                                 width="120px"></a></div>
+        <div class="col-8 col-sm-8 col-md-4 col-lg-5 col-xl-5 align-self-center mr-auto" style="padding: 0px;">
+            <p class="text-left mb-0 icon-text">Indian Institutes of Information Technology </h1>
+            <p class="mb-0 icon-text"> Coordination Forum</p>
+        </div>
+        <div class="col-12 col-sm-11 col-md-6 col-lg-5 col-xl-5 d-flex align-self-center mx-auto align-items-md-center">
+            <img class="img-fluid my-2" src="{% static 'img/base/logo_2.png' %}" width="120px" style="width: 100%;">
+        </div>
+    </div>
+
+    <!-- End -->
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-dark navbar-expand-lg text-center navigation-clean-button navb1">
+        <div class="container-fluid">
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
+                    class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse d2" id="navcol-1">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="About" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            About
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="About">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'about' %}">About IIIT</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'about_iiit_act' %}">IIIT Act</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'about_history' %}">History</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'about_administrative_structure' %}">Administation
+                                Structure</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'about_system_review_reports' %}">IIIT
+                                System Review Reports</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'about_ppp_partners' %}">PPP
+                                Partnership</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="Council" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            Coordination Forum
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="Council">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'forum_chairman' %}">Chairman</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'forum_secretary' %}">Secretory</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'forum_members' %}">Members</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'forum_meeting_minutes' %}">Minutes of
+                                Meeting</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="Research" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            Research
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="Research">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'research_projects' %}">Projects</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'research_publications' %}">Publications</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'research_facilities' %}">Research
+                                Facilities</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'research_patents' %}">Research
+                                Patents</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="People" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            Administration
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="People">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'admistr_directors' %}">Directors</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'admistr_deans' %}">Deans</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'admistr_registrars' %}">Registrars</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="Education" role="button" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            Education
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="Education">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'education_b_tech' %}">B. Tech</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'education_m_tech' %}">M. Tech</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'education_m_s' %}">M. S.</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'education_p_hd' %}">Ph. D.</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="Administation" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            Admission
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="Administation">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'admiss_info' %}">General
+                                Information</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'admiss_links' %}">Links</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'admiss_entrance' %}">Entrance Exam</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="Colloboration" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            Entrepreneurship
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="Colloboration">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'e_cell' %}">E-Cell</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'innovation_centre' %}">Innovation
+                                Center</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown mx-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="Colloboration" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:white;">
+                            Colloboration
+                        </a>
+                        <div class="dropdown-menu d3" aria-labelledby="Colloboration">
+                            <a class="dropdown-item anchorhover a4" href="{% url 'collab_mou' %}">MoU</a>
+                            <a class="dropdown-item anchorhover a4" href="{% url 'collab_student_exchange' %}">Student
+                                Exchange Programmes</a>
+                        </div>
+                    </li>
+                    <span class="text-right pull-right navbar-text actions" style="margin-right: 10px;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {% if request.user.is_authenticated %}
+                            <a class="login" href="#">Welcome, {{ request.user.first_name }}</a>
+                        {% else %}
+                            <a class="login" href="{% url 'login' %}"> Log In </a>
+                        {% endif %}
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- End -->
+</header>
+
+{% block body %} {% endblock %}
+
+<!-- Footer -->
+<footer id="footer_jump">
+    <div class="container-fluid text-left">
+        <div class="row d12">
+            <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 d13"><img class="img2"
+                                                                        src="{% static 'img/base/logo.png' %}">
+                <h4 class="heading4">Coordination Forum of Indian Institute of Information Technology<br></h4>
+                <p class="p11">Address<br>Indian Institute of Information Technology, Sri City<br>630 Gnan Marg, Sri City,
+                    Satyavedu Mandal<br>Chittoor District, Andhra Pradesh<br>517646<br>India<br><br>Email -
+                    contact@iiits.in<br>Phone -
+                    +91 73064 73364<br></p>
+            </div>
+            <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12 d14">
+                <div class="row text-center align-items-lg-start justify-content-xl-center align-items-xl-start d15">
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="heading5"><span class="s6">About</span></h5>
+                        <p><a class="anchor3" href="{% url 'about' %}"> About IIIT</a></p>
+                        <p><a class="anchor3" href="{% url 'about_iiit_act' %}"> IIIT Act</a></p>
+                        <p><a class="anchor3" href="{% url 'about_history' %}"> History</a></p>
+                        <p><a class="anchor3" href="{% url 'about_administrative_structure' %}"> Administrative
+                            Structure</a></p>
+                        <p><a class="anchor3" href="{% url 'about_system_review_reports' %}">
+                            IIIT System Review
+                            Reports</a></p>
+                        <p><a class="anchor3" href="{% url 'about_ppp_partners' %}"> PPP Partners</a></p>
+                    </div>
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="text-truncate heading6"><span class="s6">Coordination&nbsp;Forum</span></h5>
+                        <p><a class="text-truncate anchor3" href="#">Chairman</a></p>
+                        <p><a href="{% url 'forum_secretary' %}" class="anchor3">Secretory</a></p>
+                        <p><a href="{% url 'forum_chairman' %}" class="anchor3">Members</a></p>
+                        <p><a href="{% url 'forum_meeting_minutes' %}" class="anchor3">Minutes of Meeting</a></p>
+                    </div>
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="text-truncate heading6"><span class="s6">Research</span></h5>
+                        <p><a href="{% url 'research_projects' %}" class="anchor3">Projects</a></p>
+                        <p><a href="{% url 'research_publications' %}" class="anchor3">Publications</a></p>
+                        <p><a href="{% url 'research_facilities' %}" class="anchor3">Research Facilities</a></p>
+                        <p><a href="{% url 'research_patents' %}" class="anchor3">Patents</a></p>
+                    </div>
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="text-truncate heading6"><span class="s6">Administration</span></h5>
+                        <p><a href="{% url 'admistr_directors' %}" class="anchor3">Directors</a></p>
+                        <p><a href="{% url 'admistr_deans' %}" class="anchor3">Deans</a></p>
+                        <p><a href="{% url 'admistr_registrars' %}" class="anchor3">Registrars</a></p>
+                    </div>
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="text-truncate heading6"><span class="s6">Education</span></h5>
+                        <p><a href="{% url 'education_b_tech' %}" class="anchor3">B. Tech</a></p>
+                        <p><a href="{% url 'education_m_tech' %}" class="anchor3">M. Tech</a></p>
+                        <p><a href="{% url 'education_m_s' %}" class="anchor3">M. S.</a></p>
+                        <p><a href="{% url 'education_p_hd' %}" class="anchor3">Ph. D.</a></p>
+                    </div>
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="text-truncate heading6"><span class="s6">Admission</span></h5>
+                        <p><a href="{% url 'admiss_info' %}" class="anchor3">General Information</a></p>
+                        <p><a href="{% url 'admiss_links' %}" class="anchor3">Links</a></p>
+                        <p><a href="{% url 'admiss_entrance' %}" class="anchor3">Entrance Exam</a></p>
+                    </div>
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="text-truncate heading6"><span class="s6">Entrepreneurship</span></h5>
+                        <p><a href="{% url 'e_cell' %}" class="anchor3">E-Cell</a></p>
+                        <p><a href="{% url 'innovation_centre' %}" class="anchor3">Innovation Center</a></p>
+                    </div>
+                    <div class="text-left col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                        <h5 class="text-truncate heading6"><span class="s6">Colloboration</span></h5>
+                        <p><a href="{% url 'collab_mou' %}" class="anchor3">MoU</a></p>
+                        <p><a href="{% url 'collab_student_exchange' %}" class="anchor3">Students Exchange
+                            Programmes</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cr">
+        <p class="icr">Copyrights © 2020</p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script>
+    {% autoescape off %}
+        setInterval(function () {
+            var now = new Date();
+            var text = document.getElementById("navbar-timer").innerText;
+            var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+            var hours = now.getHours();
+            var am_pm;
+            if (hours >= 12) {
+                am_pm = "PM";
+            } else {
+                am_pm = "AM";
+            }
+            if (hours > 12) {
+                hours -= 12;
+            }
+            text = (now.getDate() + "").padStart(2, "0") + " " + months[now.getMonth()] + ", " + now.getFullYear() + " | " + (hours + "").padStart(2, "0") + ":" + (now.getMinutes() + "").padStart(2, "0") + " " + am_pm + " " + text[text.length - 3] + text[text.length - 2] + text[text.length - 1];
+            document.getElementById("navbar-timer").innerText = text;
+        }, 1000);
+    {% endautoescape %}
+</script>
+</body>
+</html>

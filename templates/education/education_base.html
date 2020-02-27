@@ -1,0 +1,22 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="side">
+                    <div class="block" {% if active == 'education_b_tech' %} id="active" {% endif %}><a
+                            href="{% url 'education_b_tech' %}">B.Tech</a></div>
+                    <div class="block" {% if active == 'education_m_tech' %} id="active" {% endif %}><a
+                            href="{% url 'education_m_tech' %}">M.Tech</a></div>
+                    <div class="block" {% if active == 'education_m_s' %} id="active" {% endif %}><a
+                            href="{% url 'education_m_s' %}">M.S.</a></div>
+                    <div class="block" {% if active == 'education_ph_d' %} id="active" {% endif %}><a
+                            href="{% url 'education_p_hd' %}">Ph.D.</a></div>
+                </div>
+            </div>
+            {% block main_content %} {% endblock %}
+        </div>
+    </div>
+{% endblock %}

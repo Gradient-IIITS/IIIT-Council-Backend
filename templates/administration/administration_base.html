@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/side_nav.css' %}">
+    {% block title %}
+    {% endblock %}
+{% endblock %}
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="side">
+                    <div class="block" {% if active == 'admistr_directors' %} id="active" {% endif %}>
+                        <a href="{% url 'admistr_directors' %}">Directors</a>
+                    </div>
+                    <div class="block" {% if active == 'admistr_deans' %} id="active" {% endif %}>
+                        <a href="{% url 'admistr_deans' %}">Deans</a>
+                    </div>
+                    <div class="block" {% if active == 'admistr_registrars' %} id="active" {% endif %}>
+                        <a href="{% url 'admistr_registrars' %}">Registrars</a></div>
+                </div>
+            </div>
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+{% endblock %}

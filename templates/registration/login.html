@@ -1,0 +1,33 @@
+{% extends 'registration/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Login</title>
+{% endblock %}
+
+{%  block body %}
+<div class="login-clean bg-white">
+    <form method="post" class="shadow">
+        {% csrf_token %}
+        <h2 class="sr-only">Login Form</h2>
+        <div class="illustration">
+            <h3 class="text-left text-heading">Login</h3>
+        </div>
+        {% if error %}
+            <small class="form-text text-center text-danger border rounded border-danger" style="margin-bottom: 8px;">{{ error }}</small>
+        {% endif %}
+        <div class="form-group">
+            <input class="form-control" type="email" name="email" placeholder="Email"/>
+        </div>
+        <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password"/>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary btn-block" type="submit">
+                Log In
+            </button>
+        </div>
+        <a class="forgot" href="{% url 'password_reset' %}">Forgot your password?</a>
+    </form>
+</div>
+{% endblock %}

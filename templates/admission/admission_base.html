@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/side_nav.css' %}">
+    {% block title %}
+        <title>Admission</title>
+    {% endblock %}
+{% endblock %}
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="side">
+                    <div class="block" {% if active == 'admiss_info' %} id="active" {% endif %}>
+                        <a href="{% url 'admiss_info' %}">General Information</a></div>
+                    <div class="block" {% if active == 'admiss_links' %} id="active" {% endif %}>
+                        <a href="{% url 'admiss_links' %}">Links</a></div>
+                    <div class="block" {% if active == 'admiss_entrance' %} id="active" {% endif %}>
+                        <a href="{% url 'admiss_entrance' %}">Entrance Exams</a></div>
+                </div>
+            </div>
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+
+{% endblock %}

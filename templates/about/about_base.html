@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/about/styles.css' %}">
+    {% block title %}
+        <title>About</title>
+    {% endblock %}
+{% endblock %}
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="side">
+                    <div class="block" {% if active == 'about' %} id="active" {% endif %}><a href="{% url 'about' %}">About
+                        IIIT</a></div>
+                    <div class="block" {% if active == 'about_iiit_act' %} id="active" {% endif %}><a
+                            href="{% url 'about_iiit_act' %}">IIIT Act</a></div>
+                    <div class="block" {% if active == 'about_history' %} id="active" {% endif %}><a
+                            href="{% url 'about_history' %}">History</a></div>
+                    <div class="block" {% if active == 'about_administrative_structure' %} id="active" {% endif %}><a
+                            href="{% url 'about_administrative_structure' %}">Administrative Structure</a></div>
+                    <div class="block" {% if active == 'about_system_review_reports' %} id="active" {% endif %}><a
+                            href="{% url 'about_system_review_reports' %}">IIIT System Review Reports</a></div>
+                    <div class="block" {% if active == 'about_ppp_partners' %} id="active" {% endif %}><a
+                            href="{% url 'about_ppp_partners' %}">PPP Partners</a></div>
+                </div>
+            </div>
+
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+{% endblock %}

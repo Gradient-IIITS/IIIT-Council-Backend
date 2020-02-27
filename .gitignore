@@ -46,6 +46,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+Pipfile
+Pipfile.lock
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -87,3 +89,9 @@ __pycache__/
 local_settings.py
 
 db.sqlite3
+
+#static files for upload
+
+/static/uploads/*
+
+IIIT-Coordination-Forum-Frontend-master

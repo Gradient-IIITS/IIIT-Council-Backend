@@ -1,0 +1,22 @@
+{% extends 'registration/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>{{ title }}</title>
+{% endblock %}
+
+{%  block body %}
+    <div class="login-clean" style="background-color: rgb(255,255,255);">
+        <form class="shadow">
+            <div class="illustration" style="padding-bottom: 10px;">
+                <h3 class="text-center" style="color: #190056;">{{ heading }}</h3>
+            </div>
+            <div>
+                <p class="text-break text-center text-dark">{{ message }}<br></p>
+            </div>
+            {% if redirect %}
+            <a class="text-center" href="{% url redirect.url %}">{{ redirect.text }}</a>
+        {% endif %}
+        </form>
+    </div>
+{% endblock %}

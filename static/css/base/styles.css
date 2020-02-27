@@ -1,0 +1,414 @@
+/*a:link{*/
+/*    color: #0E4190;*/
+/*}*/
+.mainhead a:link{
+    color: white;
+}
+
+.d1 {
+    background-color: #190056;
+    color: rgb(255, 255, 255);
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.p1 {
+    margin-bottom: 0px;
+}
+
+.p2 {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.p3 {
+    margin-bottom: 0px;
+    margin-right: 0;
+    font-size: 13px;
+}
+
+.p4 {
+    margin-top: -20px;
+    color: rgb(128, 128, 128);
+    font-size: 16px;
+}
+
+.p5 {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 0px;
+    color: rgb(128, 128, 128);
+    padding-top: 0px;
+}
+
+.p6 {
+    margin-bottom: 0px;
+    color: rgb(171, 171, 171);
+}
+
+.p7 {
+    margin: 0px;
+    color: rgb(72, 72, 72);
+    margin-bottom: 3px;
+}
+
+.p9 {
+    font-size: 18px;
+    color: rgb(115, 115, 115);
+    opacity: 0.98;
+    margin-top: 5px;
+}
+
+.p10 {
+    margin-bottom: 5px;
+    padding: 2px 10px 0px 10px;
+}
+
+.p11 {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.anchor1 {
+    color: rgb(255, 255, 255);
+}
+
+.anchor2 {
+    font-size: 12px;
+    padding: 2px 10px 0px 10px;
+}
+
+.anchor3 {
+    color: rgb(255, 255, 255);
+}
+
+.anchor3:hover {
+    color: rgb(255, 255, 255);
+}
+
+.img1 {
+    background-color: #ffffff;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img2 {
+    width: 25%;
+}
+
+.navb1 {
+    padding: 0px;
+    width: 100%;
+    background-color: rgb(25, 0, 86);
+}
+
+.d2 {
+    width: 100%;
+    padding: 0px 2%;
+}
+
+.a4 {
+    color: white;
+}
+
+.d3 {
+    background-color: rgb(41, 41, 41);
+}
+
+.d4 {
+    margin-top: 40px;
+}
+
+.d5 {
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+.d6 {
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 20px;
+}
+
+.d7 {
+    height: auto;
+    background-color: #ffffff;
+}
+
+.d8 {
+    margin-top: 100px;
+}
+
+.d9 {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.d10 {
+    margin-top: 30px;
+}
+
+.d11 {
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.d12 {
+    background-color: #190056;
+    margin-top: 50px;
+    padding: 30px 15px 0px 15px;
+}
+
+.d13 {
+    background-color: #190056;
+}
+
+.d14 {
+    background-color: #190056;
+    padding: 0px;
+}
+
+.d15 {
+    background-color: #190056;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    line-height: 12px;
+    padding-left: 15px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.s1 {
+    text-decoration: underline;
+    padding: 0px 20px;
+}
+
+.s2 {
+    background-color: rgb(132, 47, 240);
+    margin-right: 3%;
+    padding: 4px 10px;
+}
+
+.s3 {
+    background-color: rgb(132, 47, 240);
+    margin-right: 3%;
+    padding: 4px 10px;
+}
+
+.s4 {
+    background-color: rgb(65, 172, 104);
+    margin-right: 3%;
+    padding: 4px 10px;
+}
+
+.s5 {
+    background-color: rgb(228, 74, 74);
+    padding: 4px 10px;
+}
+
+.s6 {
+    text-decoration: underline;
+}
+
+.heading1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.heading2 {
+    font-size: 36px;
+}
+
+.heading3 {
+    padding: 2px 10px 0px 10px;
+}
+
+.heading4 {
+    color: rgb(255, 255, 255);
+    margin-top: 8px;
+}
+
+.heading5 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.heading6 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.heading7 {
+    padding: 0px 10px 0px 10px;
+}
+
+.cr {
+    background-color: black;
+}
+
+.icr {
+    padding: 5px;
+    margin: 0px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
+a.anchorhover:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.time {
+    margin-left: 10rem;
+}
+
+.langauge {
+    margin-right: 10rem;
+}
+
+.height {
+    height: 35px;
+    font-size: 14px;
+}
+
+.news-dec {
+    border: none;
+}
+
+.card-dec {
+    border: none;
+    padding-bottom: 15px;
+    border-bottom: 2px solid rgb(31, 0, 139);
+    margin: 10px 0px;
+}
+
+.cardshadow {
+    box-shadow: 5px 5px 15px rgb(189, 189, 189);
+}
+
+.remain-1 {
+    margin-left: 6%;
+}
+
+.remain-2 {
+    margin-right: 6%;
+}
+
+/* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  */
+
+@media (min-width: 1281px) {
+    .icon-text {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .news {
+        overflow: scroll;
+        height: 505px;
+    }
+}
+
+/* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .news {
+        overflow: scroll;
+        height: 505px;
+    }
+}
+
+/* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .icon-text {
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    .icon {
+        text-align: center;
+        width: 82px;
+        height: 82px;
+    }
+
+    .upper {
+        display: none;
+    }
+
+    .news {
+        overflow: scroll;
+        height: 505px;
+    }
+}
+
+/* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .news {
+        overflow: scroll;
+        height: 505px;
+    }
+}
+
+/* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .icon-text {
+        font-size: 0.8rem;
+        font-weight: 490;
+    }
+
+    .icon {
+        text-align: center;
+        width: 80px;
+        height: 80px;
+    }
+
+    .upper {
+        display: none;
+    }
+}
+
+/* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .icon-text {
+        font-size: 0.6rem;
+        font-weight: 490;
+    }
+
+    .icon {
+        text-align: center;
+        width: 48px;
+        height: 48px;
+    }
+
+    .upper {
+        display: none;
+        margin: 0px 50px;
+    }
+}

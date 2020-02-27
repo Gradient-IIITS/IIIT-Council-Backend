@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 col-xs-2 col-md-2 col-lg-2 col-xl-2">
+                <div class="side">
+                    <div class="block" {% if active == 'research_projects' %} id="active" {% endif %}><a
+                            href="{% url 'research_projects' %}">Projects</a></div>
+                    <div class="block" {% if active == 'research_publications' %} id="active" {% endif %}><a
+                            href="{% url 'research_publications' %}">Publications</a></div>
+                    <div class="block" {% if active == 'research_facilities' %} id="active" {% endif %}><a
+                            href="{% url 'research_facilities' %}">Research Facilities</a></div>
+                    <div class="block" {% if active == 'research_patents' %} id="active" {% endif %}><a
+                            href="{% url 'research_patents' %}">Research Patents</a></div>
+                </div>
+            </div>
+            {% block main_content %} {% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+

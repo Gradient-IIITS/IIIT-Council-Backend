@@ -1,0 +1,36 @@
+style {
+}
+
+@media (max-width: 544px) {
+  .flex-row {
+    -ms-flex-direction: column-reverse!important;
+    flex-direction: column-reverse!important;
+  }
+}
+
+@media (max-width: 544px) {
+  .text-center {
+    text-align: center!important;
+    width: 60%;
+  }
+}
+
+@media (max-width: 544px) {
+  .d-flex.flex-column.justify-content-around.profname {
+    align-items: center;
+  }
+}
+
+table td a, table td a:hover {
+  color: #6699ff;
+}
+
+.table td, .table thead th {
+  /*text-align: center;*/
+  vertical-align: middle;
+}
+
+.table th:nth-child(1) {
+  text-align: initial;
+}
+
